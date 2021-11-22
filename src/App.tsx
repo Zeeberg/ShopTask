@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
+import "./styles/App.scss";
+import { BrowserRouter } from "react-router-dom";
+import Header from "./components/UI/Header/Header";
+import AppRouter from "./components/AppRouter";
 
 const App = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <BrowserRouter>
+      <Header />
+      <div className="container">
+        <AppRouter />
+      </div>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;

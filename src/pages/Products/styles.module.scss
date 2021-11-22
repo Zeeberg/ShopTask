@@ -1,0 +1,11 @@
+.products-page {
+  margin-top: 50px;
+  &__wrapper {
+    display: flex;
+  }
+}
+.content {
+  padding-left: 34px;
+  width: 100%;
+  position: relative;
+}

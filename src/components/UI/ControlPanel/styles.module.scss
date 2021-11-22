@@ -1,0 +1,13 @@
+.ControlPanel {
+  display: flex;
+}
+
+.ControlPanel__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.ControlPanel__item {
+  &:hover svg {
+    fill: #000000;
+  }
+}
