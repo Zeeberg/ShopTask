@@ -1,8 +1,9 @@
-import React from "react";
-import ControlPanel from "../ControlPanel/ControlPanel";
-import Logo from "../Logo/Logo";
-import Navbar from "../Navbar/Navbar";
-import styles from "./styles.module.scss";
+import React from 'react'
+
+import ControlPanel from '../ControlPanel/ControlPanel'
+import Logo from '../Logo/Logo'
+import Navbar from '../Navbar/Navbar'
+import styles from './styles.module.scss'
 
 const Header = () => {
   return (
@@ -15,7 +16,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

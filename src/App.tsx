@@ -1,8 +1,9 @@
-import React from "react";
-import "./styles/App.scss";
-import { BrowserRouter } from "react-router-dom";
-import Header from "./components/UI/Header/Header";
-import AppRouter from "./components/AppRouter";
+import './styles/App.scss'
+
+import { BrowserRouter } from 'react-router-dom'
+
+import AppRouter from './components/AppRouter'
+import Header from './components/UI/Header/Header'
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
         <AppRouter />
       </div>
     </BrowserRouter>
-  );
-};
+  )
+}
 
-export default App;
+export default App
