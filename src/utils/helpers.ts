@@ -28,7 +28,7 @@ export const getRangeByType = (ranges: IRange[], type: string) => {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const findValFromObject = (object: any, key: string): number => {
+export const findValFromObject = (object: any, key: string): number => {
   let value = 0
   Object.keys(object).some(function (k) {
     if (k === key) {
@@ -51,14 +51,10 @@ const findValFromObject = (object: any, key: string): number => {
 export const capitalizeFirstLetter = (string: string) =>
   string.charAt(0).toUpperCase() + string.slice(1)
 
-export const filterElementByRange = (
-  ranges: IRange[],
-  value: number,
-  type: string,
+export const handleCounter = (
+  increment: number,
+  counter: number,
+  setState: React.Dispatch<React.SetStateAction<number>>,
 ) => {
-  return (
-    /* eslint-disable @typescript-eslint/no-non-null-assertion */
-    value >= getRangeByType(ranges, type)!.curRange.min &&
-    value <= getRangeByType(ranges, type)!.curRange.max
-  )
+  setState(counter + increment < 1 ? 1 : counter + increment)
 }

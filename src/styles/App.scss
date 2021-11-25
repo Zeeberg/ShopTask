@@ -1,13 +1,17 @@
-@import "../styles/normalize.scss";
-@import "./fonts.scss";
+@import '../styles/normalize.scss';
+@import './fonts.scss';
 
 * {
-  font-family: "Google Sans";
+  font-family: 'Google Sans';
   box-sizing: border-box;
 }
 
 body {
   background-color: #ffffff;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 .container {
@@ -53,4 +57,16 @@ body {
 .input-range__slider {
   background: #000000 !important;
   border: 1px solid #000000 !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
 }

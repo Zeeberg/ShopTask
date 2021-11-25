@@ -1,0 +1,42 @@
+.shopping-cart-count {
+  display: flex;
+  align-items: center;
+
+  &__input {
+    outline: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    padding: 0 5px;
+  }
+
+  &__plus,
+  &__minus {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: 500;
+    }
+  }
+
+  &__plus {
+    &::before {
+      content: '+';
+    }
+  }
+
+  &__minus {
+    &::before {
+      content: '-';
+    }
+  }
+}

@@ -1,22 +1,18 @@
 import ProductImage from 'components/UI/ProductImage/ProductImage'
 import Stars from 'components/UI/Stars/Stars'
 import React from 'react'
-import { useHistory } from 'react-router-dom'
 import { IProduct } from 'types/product'
 
 import styles from './styles.module.scss'
 
-interface ProductItemProps {
+type ProductItemProps = {
   product: IProduct
+  onModal: () => void
 }
 
-const ProductItem = ({ product }: ProductItemProps) => {
-  const history = useHistory()
-  const handleLinkClick = () =>
-    history.push(`/products/${product.category}/${product.id}`)
-
+const ProductItem = ({ product, onModal }: ProductItemProps) => {
   return (
-    <div className={styles['product-item']} onClick={handleLinkClick}>
+    <div className={styles['product-item']} onClick={() => onModal()}>
       <ProductImage product={product} />
       <span className={styles['product-item__title']}>{product.title}</span>
       <div>

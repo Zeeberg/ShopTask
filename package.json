@@ -1,6 +1,6 @@
 {
-  "homepage": "http://zeeberg.github.io/React-test-app",
-  "name": "react-test-task",
+  "homepage": "http://zeeberg.github.io/ShopTask",
+  "name": "shop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -11,3 +11,23 @@
     fill: #000000;
   }
 }
+
+.ControlPanel__cart {
+  position: relative;
+
+  span {
+    color: #ffffff;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: rgb(217, 4, 41);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    transform: translate(50%, -50%);
+  }
+}
